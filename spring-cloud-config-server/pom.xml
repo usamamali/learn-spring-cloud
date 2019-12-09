@@ -11,7 +11,7 @@
 	<groupId>com.spring.cloud.basics</groupId>
 	<artifactId>spring-cloud-config</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-config</name>
+	<name>spring-cloud-config-server</name>
 	<description>Demo project for Spring Cloud Config</description>
 
 	<properties>
