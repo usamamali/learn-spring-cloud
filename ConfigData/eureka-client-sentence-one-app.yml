@@ -4,6 +4,8 @@ server:
 ---
 spring:
   profiles: sentence
+  application:
+    name: eureka-client-sentence-one-app-sentence
 server:
   port: 8020
 words: NotApplicable
@@ -18,11 +20,15 @@ words: I,You,He,She,It
 ---
 spring:
   profiles: verb
+  application:
+    name: eureka-client-sentence-one-app-verb
 words: ran,knew,had,saw,bought
 
 ---
 spring:
   profiles: article
+  application:
+    name: eureka-client-sentence-one-app-article
 words: a,the
 
 ---
@@ -33,4 +39,6 @@ words: reasonable,leaky,suspicious,ordinary,unlikely
 ---
 spring:
   profiles: noun
+  application:
+    name: eureka-client-sentence-one-app-noun
 words: boat,book,vote,seat,backpack,partition,groundhog
