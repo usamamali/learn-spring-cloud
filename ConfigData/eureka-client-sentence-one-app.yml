@@ -15,8 +15,7 @@ spring:
   profiles: subject
   application:
     name: eureka-client-sentence-one-app-subject
-#words: I,You,He,She,It
-words: They
+words: I,You,He,She,It
 
 ---
 spring:
