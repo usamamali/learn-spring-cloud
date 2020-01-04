@@ -5,7 +5,7 @@ server:
 spring:
   profiles: sentence
   application:
-    name: eureka-client-sentence-one-app-sentence1
+    name: eureka-client-sentence-one-app-sentence
 server:
   port: 8020
 words: NotApplicable
@@ -15,7 +15,8 @@ spring:
   profiles: subject
   application:
     name: eureka-client-sentence-one-app-subject
-words: I,You,He,She,It
+#words: I,You,He,She,It
+words: They
 
 ---
 spring:
