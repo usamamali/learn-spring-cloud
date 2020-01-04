@@ -34,6 +34,8 @@ words: a,the
 ---
 spring:
   profiles: adjective
+  application:
+    name: eureka-client-sentence-one-app-adjective
 words: reasonable,leaky,suspicious,ordinary,unlikely
 
 ---
