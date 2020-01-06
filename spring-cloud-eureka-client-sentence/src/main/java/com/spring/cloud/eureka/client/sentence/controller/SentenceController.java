@@ -9,22 +9,21 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import com.spring.cloud.eureka.client.sentence.service.SentenceService;
+
 import java.net.URI;
 import java.util.List;
 
 @RestController
 public class SentenceController {
 
-	@Autowired RestTemplate template;
+@Autowired
+SentenceService sentenceService;
 
 	@GetMapping("/sentence")
 	public @ResponseBody String getSentence() {
-		return String.format("%s %s %s %s %s.", getWord("EUREKA-CLIENT-SUBJECT"), getWord("EUREKA-CLIENT-VERB"),
-				getWord("EUREKA-CLIENT-ARTICLE"), getWord("EUREKA-CLIENT-ADJECTIVE"), getWord("EUREKA-CLIENT-NOUN"));
-
+		return sentenceService.getSentence();
 	}
 
-	public String getWord(String service) {
-		return template.getForObject("http://" + service, String.class);
-	}
+
 }
