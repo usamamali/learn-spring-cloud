@@ -22,7 +22,7 @@ SentenceService sentenceService;
 
 	@GetMapping("/sentence")
 	public @ResponseBody String getSentence() {
-		return sentenceService.getSentence();
+		return sentenceService.buildSentence();
 	}
 
 
